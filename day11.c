@@ -5,7 +5,8 @@
 void permutation(char *str, int l, int r);
 void swap(char *x, char *y);
 
-int main() {
+int main() 
+{
     char str[20];
     printf("Enter a string (No space): ");
     scanf("%s", str);
@@ -17,15 +18,18 @@ int main() {
     return 0;
 }
 
-void permutation(char *str, int a, int b) {
-    if (a == b) {
+void permutation(char *str, int a, int b) 
+{
+    if (a == b) 
+    {
         printf("%s\n", str);
         return;
     }
 
     bool used[256] = {0}; 
 
-    for (int i = a; i <= b; i++) {
+    for (int i = a; i <= b; i++) 
+    {
         if (used[(unsigned char)str[i]]) 
             continue;
 
@@ -37,7 +41,8 @@ void permutation(char *str, int a, int b) {
     }
 }
 
-void swap(char *x, char *y) {
+void swap(char *x, char *y) 
+{
     char t = *x;
     *x = *y;
     *y = t;
