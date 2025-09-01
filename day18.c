@@ -13,7 +13,7 @@ int main()
 
 long long Factor(long long l)
 {
-    int i = 1;
+    long long i = 1;
     int count = 0;
     while (i * i <= l)
     {
